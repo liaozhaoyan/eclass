@@ -140,6 +140,6 @@ dependencies = {
 build = {
     type = "builtin",
     modules = {
-        eclass = 'src/eclass.lua',
+        eclass = 'eclass.lua',
     },
 }

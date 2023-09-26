@@ -4,7 +4,7 @@
 --- DateTime: 2023/3/19 5:55 PM
 ---
 
-package.path = package.path .. ";../src/?.lua;"
+package.path = package.path .. ";../?.lua;"
 
 require("eclass")
 
