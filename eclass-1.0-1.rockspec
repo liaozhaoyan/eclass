@@ -1,9 +1,18 @@
-# eclass
- eclass is a simple object-oriented implementation of Lua
+package = "eclass"
+version = "1.0-1"
+source = {
+    url = "git://github.com/liaozhaoyan/eclass.git"
+}
+description = {
+    summary = "eclass is a simple object-oriented implementation of Lua",
+    license = "MIT",
+    homepage = "https://github.com/liaozhaoyan/eclass",
+    detailed = [[
+eclass is a simple object-oriented implementation of Lua
 
 # Example
   base class
-  
+
 ```lua
 require("eclass")   -- declare class function
 
@@ -122,3 +131,15 @@ three:say()
 one = nil
 two:say()
 ```
+
+]],
+}
+dependencies = {
+    "lua >= 5.1",
+}
+build = {
+    type = "builtin",
+    modules = {
+        ['eclass'] = 'src/eclass.lua',
+    },
+}
