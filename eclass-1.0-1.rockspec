@@ -1,7 +1,7 @@
 package = "eclass"
 version = "1.0-1"
 source = {
-    url = "git://github.com/liaozhaoyan/eclass.git"
+    url = "git://github.com/liaozhaoyan/eclass"
 }
 description = {
     summary = "eclass is a simple object-oriented implementation of Lua",
@@ -140,6 +140,6 @@ dependencies = {
 build = {
     type = "builtin",
     modules = {
-        ['eclass'] = 'src/eclass.lua',
+        eclass = 'src/eclass.lua',
     },
 }
