@@ -4,6 +4,10 @@
 --- DateTime: 2022/12/16 10:16 AM
 ---
 
+local setmetatable = setmetatable
+local getmetatable = getmetatable
+local newproxy = newproxy
+
 function class(name, super)
     local cls = {
         __super = super,
